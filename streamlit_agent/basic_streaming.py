@@ -15,10 +15,10 @@ class StreamHandler(BaseCallbackHandler):
 
 
 with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", type="password")
+    openai_api_key = st.text_input("nserrez votre cle API", type="Mot de passe")
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [ChatMessage(role="assistant", content="How can I help you?")]
+    st.session_state["messages"] = [ChatMessage(role="assistant", content="Salut! Comment puis-je vous aider?")]
 
 for msg in st.session_state.messages:
     st.chat_message(msg.role).write(msg.content)
@@ -28,7 +28,7 @@ if prompt := st.chat_input():
     st.chat_message("user").write(prompt)
 
     if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
+        st.info("Veuillez Inserrer votre clé API pour utiliser le Gpts-Index Chatbot")
         st.stop()
 
     with st.chat_message("assistant"):
