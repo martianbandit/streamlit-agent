@@ -19,7 +19,7 @@ memory = ConversationBufferMemory(
 )
 if len(msgs.messages) == 0 or st.sidebar.button("Reset chat history"):
     msgs.clear()
-    msgs.add_ai_message("How can I help you?")
+    msgs.add_ai_message("Dites-moi Comment je peux vous aider?")
     st.session_state.steps = {}
 
 avatars = {"human": "user", "ai": "assistant"}
