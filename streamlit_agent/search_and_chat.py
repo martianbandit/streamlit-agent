@@ -8,8 +8,8 @@ from langchain_openai import ChatOpenAI
 
 import streamlit as st
 
-st.set_page_config(page_title="LangChain: Chat with search", page_icon="🦜")
-st.title("🦜 LangChain: Chat with search")
+st.set_page_config(page_title="LangChain: Chat with search", page_icon="c:\Users\ACER\OneDrive\Bureau\fixed_le_chat_malin.png")
+st.title("c:\Users\ACER\OneDrive\Bureau\fixed_le_chat_malin.png LangChain: Chat with search")
 
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 
