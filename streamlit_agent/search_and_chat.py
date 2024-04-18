@@ -8,8 +8,13 @@ from langchain_openai import ChatOpenAI
 
 import streamlit as st
 
-st.set_page_config(page_title="Gpts-Index Chatbot: Discussions avec recherche web", page_icon="martianbandit/streamlit-agent/icone/_icone9.png")
-st.title("🔗 Gpts-Index: Chat avec recherche web")
+icon_path = 'martianbandit/streamlit-agent/icone/_icone9.png'
+icon_path2 = 'martianbandit/streamlit-agent/icone/_icone10.png'
+icon_path3 = 'martianbandit/streamlit-agent/icone/_icone5.png'
+st.image(icon_path, width=50)
+
+st.set_page_config(page_title="Gpts-Index Chatbot: Discussions avec recherche web", page_icon=st.image)
+st.title(st.image"Gpts-Index: Chat avec recherche web")
 
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 
