@@ -5,7 +5,7 @@ from langchain_community.chat_message_histories import StreamlitChatMessageHisto
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.runnables import RunnableConfig
 from langchain_openai import ChatOpenAI
-
+from streamlit_star_rating import st_star_rating
 import streamlit as st
 
 
@@ -67,3 +67,4 @@ if prompt := st.chat_input(placeholder="Quel star quebecoise fait furreur a Las 
         response = executor.invoke(prompt, cfg)
         st.write(response["output"])
         st.session_state.steps[str(len(msgs.messages) - 1)] = response["intermediate_steps"]
+stars = st_star_rating("Please rate you experience", maxValue=5, defaultValue=3, key="rating")
