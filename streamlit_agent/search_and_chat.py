@@ -10,7 +10,7 @@ import streamlit as st
 
 
 st.set_page_config(page_title="Gpts-Index Chatbot: Discussions avec recherche web", page_icon="🌟")
-st.title("Gpts-Index: Chat avec recherche web")
+st.title(" Gpts-Index: Chat avec recherche web")
 
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 
