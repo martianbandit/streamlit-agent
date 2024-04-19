@@ -15,7 +15,7 @@ st.title("🤖 Gpts-Index: Chat avec recherche web")
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 
 msgs = StreamlitChatMessageHistory()
-st.write = (🧠)
+st.write = ('🧠')
 memory = ConversationBufferMemory(
     chat_memory=msgs, return_messages=True, memory_key="chat_history", output_key="output"
 )
