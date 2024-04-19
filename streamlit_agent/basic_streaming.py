@@ -15,7 +15,7 @@ class StreamHandler(BaseCallbackHandler):
 
 
 with st.sidebar:
-    openai_api_key = st.text_input(":rainbow inserrez votre cle API", type="password")
+    openai_api_key = st.text_input(":rainbow (inserrez votre cle API)", type="password")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [ChatMessage(role="assistant", content="Salut! Comment puis-je vous aider?")]
