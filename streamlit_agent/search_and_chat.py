@@ -20,7 +20,7 @@ memory = ConversationBufferMemory(
 )
 if len(msgs.messages) == 0 or st.sidebar.button("Effacez votre historique de chat"):
     msgs.clear()
-    msgs.add_ai_message("Dites-moi Comment je peux vous aider?")
+    msgs.add_ai_message("🤖 Dites-moi Comment je peux vous aider?")
     st.session_state.steps = {}
 
 st.sidebar.write("""🌟pour tout vos projets de 
