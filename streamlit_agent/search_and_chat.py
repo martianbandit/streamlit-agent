@@ -10,7 +10,7 @@ import streamlit as st
 
 
 st.set_page_config(page_title="Gpts-Index Chatbot: Discussions avec recherche web", page_icon="🌟")
-st.title("🤖 Gpts-Index: Chat avec recherche web")
+st.title("rainbow:🤖 Gpts-Index: Chat avec recherche web")
 st.sidebar.title("Chatbot general de 🤖[Gpt-Index](https://gpts-index.com) Venez visiter notre [site web](https://gpts-index.com)")
 st.sidebar.write("""inserrez votre clé API de OpenAI 
                  dans la barre de texte ci-dessous sinon 
