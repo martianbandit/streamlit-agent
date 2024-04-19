@@ -10,11 +10,12 @@ import streamlit as st
 
 
 st.set_page_config(page_title="Gpts-Index Chatbot: Discussions avec recherche web", page_icon="🌟")
-st.title("Gpts-Index: Chat avec recherche web")
+st.title("🤖 Gpts-Index: Chat avec recherche web")
 
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 
 msgs = StreamlitChatMessageHistory()
+st.write = (🧠)
 memory = ConversationBufferMemory(
     chat_memory=msgs, return_messages=True, memory_key="chat_history", output_key="output"
 )
@@ -25,7 +26,7 @@ if len(msgs.messages) == 0 or st.sidebar.button("Effacez votre historique de cha
 
 st.sidebar.write("""pour tout vos projets de 
 Chat avec IA commyuniquez avec:
-'[Jose](martianbandit@gmail.com)'""")
+[🚀Jose🚀](martianbandit@gmail.com)""")
 
 avatars = {"human": "user", "ai": "assistant"}
 for idx, msg in enumerate(msgs.messages):
