@@ -25,7 +25,7 @@ if len(msgs.messages) == 0 or st.sidebar.button("Effacez votre historique de cha
 
 st.sidebar.text("""pour tout vos projets de 
 Chat avec IA commyuniquez avec:
-[Jose](martianbandit@gmail.com)""")
+'[Jose](martianbandit@gmail.com)'""")
 
 avatars = {"human": "user", "ai": "assistant"}
 for idx, msg in enumerate(msgs.messages):
