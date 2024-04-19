@@ -29,6 +29,8 @@ Chat avec IA commyuniquez avec:
 [🚀José Paradis🚀](martianbandit@gmail.com)""")
 st.sidebar.container("Autres Chatbots")
 st.sidebar.button("button")
+
+
 avatars = {"human": "user", "ai": "assistant"}
 for idx, msg in enumerate(msgs.messages):
     with st.chat_message(avatars[msg.type]):
