@@ -11,9 +11,8 @@ import streamlit as st
 
 st.set_page_config(page_title="Gpts-Index Chatbot: Discussions avec recherche web", page_icon="🌟")
 st.title("🤖 Gpts-Index: Chat avec recherche web")
-st.sidebar.title("[GPTS-Index](https://www.gpts-index.com)🌟")
+st.sidebar.title("🌟[GPTS-Index.com](https://www.gpts-index.com)🌟")
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
-st.write = ('🧠')
 
 msgs = StreamlitChatMessageHistory()
 
