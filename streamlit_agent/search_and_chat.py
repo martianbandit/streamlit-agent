@@ -2,7 +2,7 @@ from langchain.agents import ConversationalChatAgent, AgentExecutor
 from langchain.memory import ConversationBufferMemory
 from langchain_community.callbacks import StreamlitCallbackHandler
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
-from langchain_community.tools import SerpAPI
+from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.runnables import RunnableConfig
 from langchain_openai import ChatOpenAI
 import streamlit as st
@@ -50,7 +50,7 @@ if prompt := st.chat_input(placeholder="Quel star quebecoise fait furreur a Las 
         st.stop()
 
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=openai_api_key, streaming=True)
-    tools = [serpAPI(name="Search")]
+    tools = [DuckDuckGoSearchRun(name="Search")]
     chat_agent = ConversationalChatAgent.from_llm_and_tools(llm=llm, tools=tools)
     executor = AgentExecutor.from_agent_and_tools(
         agent=chat_agent,
@@ -66,4 +66,3 @@ if prompt := st.chat_input(placeholder="Quel star quebecoise fait furreur a Las 
         response = executor.invoke(prompt, cfg)
         st.write(response["output"])
         st.session_state.steps[str(len(msgs.messages) - 1)] = response["intermediate_steps"]
-
