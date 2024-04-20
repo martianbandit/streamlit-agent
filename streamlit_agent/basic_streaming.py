@@ -13,10 +13,10 @@ class StreamHandler(BaseCallbackHandler):
         self.text += token
         self.container.markdown(self.text)
 
-
+st.title( :rainbow[Bienvenue sur le site des Chatbots de [Gpts-Index.com](https://gpts-index.com)
 with st.sidebar:
-    openai_api_key = st.text_input(" :rainbow[inserrez votre cle API de OpenAI ou sinon [cliquez ici](https://platform.openai.com/api-keys)pour en obtenir une.]", type="password")
-
+    openai_api_key = st.text_input(" :rainbow[inserrez votre cle API de OpenAI ou sinon [cliquez ici](https://platform.openai.com/api-keys) pour en obtenir une ou choisir un autre modèle.]", type="password")
+    TOGETHER_API_KEY = ST.TEXT_INPUT(" :rainbow[Inserrez votre cle API de Together.ai ou obtenez la gratuitement et avoir acces a plus de 100 modeles !! [Obtenir une cle API together.ai ici](https://api.together.xyz/settings/api-keys)]"
 if "messages" not in st.session_state:
     st.session_state["messages"] = [ChatMessage(role="assistant", content="Salut! Comment puis-je vous aider?")]
 
@@ -25,7 +25,7 @@ for msg in st.session_state.messages:
 
 if prompt := st.chat_input():
     st.session_state.messages.append(ChatMessage(role="utilisateur", content=prompt))
-    st.chat_message("user").write(prompt)
+    st.chat_message("utilisateur").write(prompt)
 
     if not openai_api_key:
         st.info("Veuillez Inserrer votre clé API pour utiliser le Gpts-Index Chatbot")
