@@ -28,7 +28,7 @@ with st.sidebar:
 st.write('You selected:', option)
 
     
-    option = st.selectbox(
+   option = st.selectbox(
    "et choisissez le modèles d'IA",
    ("chatgpt-3.5", "chatgpt-4", "llama2", "llama3", "groq", "claude-2"),
    index=None,
