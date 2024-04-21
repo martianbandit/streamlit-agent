@@ -12,7 +12,7 @@ class StreamHandler(BaseCallbackHandler):
     def on_llm_new_token(self, token: str, **kwargs) -> None:
         self.text += token
         self.container.markdown(self.text)
-st.sidebar.image(url="https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=sharing")
+st.sidebar.image("https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=sharing")
 st.title(" :rainbow[Bienvenue sur le site des Chatbots de [Gpts-Index.com](https://gpts-index.com)]")
 st.sidebar.title(" :green[differents modeles, differentes plateformes, des outils et des agents! :blue[Selectionnez vos préférence pour chaque attributs.]]")
 with st.sidebar:
