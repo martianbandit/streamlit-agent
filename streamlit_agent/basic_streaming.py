@@ -44,18 +44,4 @@ if prompt := st.chat_input():
         response = llm.invoke(st.session_state.messages)
         st.session_state.messages.append(ChatMessage(role="assistant", content=response.content))
 
-with st.sidebar:
-    option = st.selectbox("Choisisez le fournisseur:",
-     ('OpenAI', 'TogetherAI', 'Replicate', 'Anthropic','Groq'))
-    
-st.write('You selected:', option)
-
-   
-option = st.selectbox("et choisissez le modèles d'IA",  
-    ("chatgpt-3.5", "chatgpt-4", "llama2", "llama3", "groq", "claude-2"),
-    index=None,
-    placeholder="Select contact method..."),
-   
-st.write('You selected:', option)
-
     
