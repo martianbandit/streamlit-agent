@@ -21,16 +21,15 @@ st.sidebar.image("https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSs
 st.title(" :rainbow[Bienvenue sur le site des Chatbots de [Gpts-Index.com](https://gpts-index.com)]")
 st.sidebar.title(" :green[differents modeles, differentes plateformes, des outils et des agents! :blue[Selectionnez vos préférence pour chaque attributs.]]")
 with st.sidebar:
-    option = st.selectbox("Choisisez le fournisseur:",
-    ('OpenAI', 'TogetherAI', 'Replicate', 'Anthropic','Groq'))
+     option = st.selectbox("Choisisez le fournisseur:",
+     ('OpenAI', 'TogetherAI', 'Replicate', 'Anthropic','Groq'))
     
 st.write('You selected:', option)
 
-    
-   option = st.selectbox("et choisissez le modèles d'IA",  
-   ("chatgpt-3.5", "chatgpt-4", "llama2", "llama3", "groq", "claude-2"),
-   index=None,
-   placeholder="Select contact method..."),
+    option = st.selectbox("et choisissez le modèles d'IA",  
+    ("chatgpt-3.5", "chatgpt-4", "llama2", "llama3", "groq", "claude-2"),
+    index=None,
+    placeholder="Select contact method..."),
    
 st.write('You selected:', option)
 
