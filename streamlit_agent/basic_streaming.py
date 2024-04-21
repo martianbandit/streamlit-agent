@@ -17,7 +17,6 @@ class StreamHandler(BaseCallbackHandler):
         
 st.set_page_config(page_title="Gpts-Index.com Chatbot: Discussions avec recherche web", page_icon="LE CATS MALIN.png")
 
-st.sidebar.image("https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=sharing"),
 
 st.title(" :rainbow[Bienvenue sur le site des Chatbots de [Gpts-Index.com](https://gpts-index.com)]"),
 
