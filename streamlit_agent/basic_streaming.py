@@ -32,8 +32,8 @@ st.write('You selected:', option)
    "et choisissez le modèles d'IA",
    ("chatgpt-3.5", "chatgpt-4", "llama2", "llama3", "groq", "claude-2"),
    index=None,
-   placeholder="Select contact method...",
-)
+   placeholder="Select contact method..."),
+   
 
 st.write('You selected:', option)
 
