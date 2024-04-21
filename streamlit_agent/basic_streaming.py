@@ -9,7 +9,7 @@ class StreamHandler(BaseCallbackHandler):
         self.container = container
         self.text = initial_text
 
-st.set_page_config(page_title="Gpts-Index.com Chatbot: Discussions avec recherche web", page_icon="")
+st.set_page_config(page_title="Gpts-Index.com Chatbot: Discussions avec recherche web", page_icon="LE CATS MALIN.png")
     
     def on_llm_new_token(self, token: str, **kwargs) -> None:
         self.text += token
