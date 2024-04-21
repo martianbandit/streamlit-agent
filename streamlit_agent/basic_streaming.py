@@ -13,7 +13,7 @@ class StreamHandler(BaseCallbackHandler):
         self.text += token
         self.container.markdown(self.text)
 st.sidebar.image(url ="https://drive.google.com/file/d/1EcM_cJtGYrxErqLsYLqGBl6dzNKSsxF6/view?usp=sharing")
-st.title(text_align="center",":wrench: :rainbow[ Bienvenue sur le site des Chatbots de [Gpts-Index.com](https://gpts-index.com)]")
+st.title(text_align="center"," :wrench: :rainbow[ Bienvenue sur le site des Chatbots de [Gpts-Index.com](https://gpts-index.com)]")
 st.sidebar.title(" :green[differents modeles, differentes plateformes, des outils et des agents! :blue[Selectionnez vos préférence pour chaque attributs.]]")
 with st.sidebar:
     openai_api_key = st.text_input(" :rainbow[inserrez votre cle API de OpenAI ou sinon [cliquez ici](https://platform.openai.com/api-keys) pour en obtenir une. Il es possible de choisir un autre modèle a partir d'autre plateforme.]", type="password")
