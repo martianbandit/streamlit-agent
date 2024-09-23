@@ -8,7 +8,7 @@ st.set_page_config(page_title="Gpts-Index.com Chatbot: Discussions avec recherch
 
 st.title(" :rainbow[Bienvenue sur le site des Chatbots de Gpts-Index.com]")
 
-st.sidebar.title(" :green[differents modeles, differentes plateformes, des outils et des agents! :blue[Selectionnez vos préférence pour chaque attributs.]]")
+st.sidebar.title(" :green[differents modèles, differentes plateformes, des outils et des agents! :blue[Selectionnez vos préférence pour chaque attributs.]]")
 with st.sidebar:
     openai_api_key = st.text_input(" :rainbow[inserrez votre cle API de OpenAI ou sinon [cliquez ici](https://platform.openai.com/api-keys) pour en obtenir une. Il es possible de choisir un autre modèle a partir d'autre plateforme.]", type="password")
     TOGETHER_API_KEY = st.text_input(" :rainbow[Inserrez votre cle API de Together.ai ou obtenez la gratuitement et avoir acces a plus de 100 modeles !! [Obtenir une cle API together.ai ici](https://api.together.xyz/settings/api-keys)]", type="password")
